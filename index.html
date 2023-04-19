@@ -6,27 +6,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>Text Editor</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	  <link rel="stylesheet" href="./style.css"/>
 	</head>
-        <div class="redactor">
+        <div id="redactor">
             <div id="heading">
-                <button class="fontStyleItalic btn"><i>I</i></button>
-                <button class="fontStyleBold btn"><b>B</b></button>
-                <button class="fontStyleUnderline btn"><u>U</u></button>
-                <button class="fontStyleColor btn">C</button>
-                <!-- <select id="fontSie" name="font-size">
-                    <option selected="selected">Выберите размер</option>
-                    <option value="4">18px</option>
-                    <option value="5">24px</option>
-                    <option value="6">32px</option>
-                    <option value="7">48px</option>
-                </select> -->
-                
+              <a href="#" class="font-style-italic fas fa-italic btn-redactor"></a>
+              <a href="#" class="font-style-bold fas fa-bold btn-redactor"></a>
+              <a href="#" class="font-style-underline fas fa-underline btn-redactor"></a>
+              <a href="#" class="font-style-left fas fa-align-left btn-redactor"></a>
+              <a href="#" class="font-style-center fas fa-align-center btn-redactor"></a>
+              <a href="#" class="font-style-right fas fa-align-right btn-redactor"></a>
+              <input class="toolbar-color" type="color" value="#000000" />
              </div>
              <div class="contentibale" contenteditable="true"></div>
-             <!-- <textarea id="content"></textarea > -->
              <textarea id="code-content"></textarea>
-             <!-- <textarea id="selected-content"></textarea> -->
         </div>
 	<script src="./index.js"></script>
 
